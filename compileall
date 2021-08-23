@@ -1,0 +1,6 @@
+#!/bin/bash
+gcc enc_server.c otp_encryption.c file_transfer.c -o enc_server
+gcc enc_client.c file_transfer.c -o enc_client
+gcc dec_server.c otp_encryption.c file_transfer.c -o dec_server
+gcc dec_client.c file_transfer.c -o dec_client
+gcc keygen.c -o keygen
