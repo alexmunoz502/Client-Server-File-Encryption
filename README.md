@@ -1,7 +1,7 @@
 # Client-Server File Encryption
 ##### A C program for encrypting and decrypting files over a socket connection.
 
-#### ABOUT
+#### --- ABOUT ---
 This program was part of my operating system studies at Oregon State University. 
 I learned how to utilize the linux socket library as well as the one-time-pad 
 encryption method.  
@@ -9,14 +9,14 @@ encryption method.
 For more information on this encryption method, please see the [WikiPedia](https://en.wikipedia.org/wiki/One-time_pad) page.  
 
 
-#### SYSTEM REQUIREMENTS
+#### --- SYSTEM REQUIREMENTS ---
 The program runs on Linux-based operating systems.
 
-#### COMPILING INSTRUCTIONS
+#### --- COMPILING INSTRUCTIONS ---
 Included is a compileall bash script which will compile the 5 programs in this
 project.
 
-#### FILES
+#### --- FILES ---
 While there are 5 executables generated, there are 7 files (excluding headers) 
 for this project in total. Below is a description of each file and its purpose.
 
@@ -71,7 +71,7 @@ outputted to stdout. EXAMPLE:
 `./dec_server 5678`  
 This command will start an decryption server listening on port 5678.  
 
-#### NOTES
+#### --- NOTES ---
 The encryption server cannot be used to connect to a decryption server, and 
 vice versa. An authentication error message will be printed indicating the 
 wrong client/server type was used. 
