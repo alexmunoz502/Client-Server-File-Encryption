@@ -1,7 +1,7 @@
 # Client-Server File Encryption
-#### A C program for encrypting and decrypting files over a socket connection.
+##### A C program for encrypting and decrypting files over a socket connection.
 
-##### ABOUT
+#### ABOUT
 This program was part of my operating system studies at Oregon State University. 
 I learned how to utilize the linux socket library as well as the one-time-pad 
 encryption method.  
@@ -9,14 +9,14 @@ encryption method.
 For more information on this encryption method, please see the [WikiPedia](https://en.wikipedia.org/wiki/One-time_pad) page.  
 
 
-##### SYSTEM REQUIREMENTS
+#### SYSTEM REQUIREMENTS
 The program runs on Linux-based operating systems.
 
-##### COMPILING INSTRUCTIONS
+#### COMPILING INSTRUCTIONS
 Included is a compileall bash script which will compile the 5 programs in this
 project.
 
-##### FILES
+#### FILES
 While there are 5 executables generated, there are 7 files (excluding headers) 
 for this project in total. Below is a description of each file and its purpose.
 
@@ -54,7 +54,7 @@ cyphertext. EXAMPLE:
 `./enc_server 5678`  
 This command will start an encryption server listening on port 5678.  
 
-##### dec_client.c
+###### dec_client.c
 This program compiles to create the dec_client executable, which works exactly
 the same as the encryption client, but instead sends cyphertext to a decryption
 server to be decrypted and returned as plaintext. EXAMPLE:  
@@ -63,7 +63,7 @@ This command will utilize the dec_client program to send a cyphertext file and
 key to the decryption server on port 5678 and redirect the plaintext results
 to a file called plaintext.txt  
 
-##### dec_server.c
+###### dec_server.c
 This program compiles to create the dec_server executable, which works exactly 
 the same as the encryption client, but instead receives cyphertext files and 
 a key from a decryption client and sends back the decrypted file, which is 
